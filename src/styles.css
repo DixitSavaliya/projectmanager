@@ -1,0 +1,330 @@
+/*****Loader Css Start*****/
+.loader {
+  width: 150px;
+  height: 150px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.loader span {
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+}
+.loader span:nth-child(1) {
+  top: 0;
+  left: 0;
+  background-color: rgba(66, 133, 244, 0.75);
+  -webkit-animation: move1 2s linear infinite;
+          animation: move1 2s linear infinite;
+}
+.loader span:nth-child(2) {
+  top: 0;
+  right: 0;
+  background-color: rgba(219, 68, 55, 0.75);
+  -webkit-animation: move2 2s linear infinite;
+          animation: move2 2s linear infinite;
+}
+.loader span:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  background-color: rgba(244, 180, 0, 0.75);
+  -webkit-animation: move3 2s linear infinite;
+          animation: move3 2s linear infinite;
+}
+.loader span:nth-child(4) {
+  bottom: 0;
+  right: 0;
+  background-color: rgba(15, 157, 88, 0.75);
+  -webkit-animation: move4 2s linear infinite;
+          animation: move4 2s linear infinite;
+}
+
+@-webkit-keyframes move1 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    z-index: 10;
+  }
+  25% {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  50% {
+    -webkit-transform: translate(100%, 100%);
+            transform: translate(100%, 100%);
+  }
+  75% {
+    -webkit-transform: translate(0, 100%);
+            transform: translate(0, 100%);
+    z-index: 0;
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes move1 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    z-index: 10;
+  }
+  25% {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  50% {
+    -webkit-transform: translate(100%, 100%);
+            transform: translate(100%, 100%);
+  }
+  75% {
+    -webkit-transform: translate(0, 100%);
+            transform: translate(0, 100%);
+    z-index: 0;
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+@-webkit-keyframes move2 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  25% {
+    -webkit-transform: translate(0, 100%);
+            transform: translate(0, 100%);
+  }
+  50% {
+    -webkit-transform: translate(-100%, 100%);
+            transform: translate(-100%, 100%);
+    z-index: 0;
+  }
+  75% {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+    z-index: 10;
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+@keyframes move2 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  25% {
+    -webkit-transform: translate(0, 100%);
+            transform: translate(0, 100%);
+  }
+  50% {
+    -webkit-transform: translate(-100%, 100%);
+            transform: translate(-100%, 100%);
+    z-index: 0;
+  }
+  75% {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+    z-index: 10;
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+@-webkit-keyframes move3 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  25% {
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+    z-index: 10;
+  }
+  50% {
+    -webkit-transform: translate(100%, -100%);
+            transform: translate(100%, -100%);
+  }
+  75% {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    z-index: 0;
+  }
+}
+@keyframes move3 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  25% {
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+    z-index: 10;
+  }
+  50% {
+    -webkit-transform: translate(100%, -100%);
+            transform: translate(100%, -100%);
+  }
+  75% {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    z-index: 0;
+  }
+}
+@-webkit-keyframes move4 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  25% {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+    z-index: 0;
+  }
+  50% {
+    -webkit-transform: translate(-100%, -100%);
+            transform: translate(-100%, -100%);
+    z-index: 10;
+  }
+  75% {
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+@keyframes move4 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  25% {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+    z-index: 0;
+  }
+  50% {
+    -webkit-transform: translate(-100%, -100%);
+            transform: translate(-100%, -100%);
+    z-index: 10;
+  }
+  75% {
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+/*****Loader Css End*****/
+
+
+
+/* You can add global styles to this file, and also import other style files */
+ul{
+	padding: 0px;
+	margin: 0px;
+}
+nav.navbar {
+	border: none;
+	border-radius: 0px;
+	margin: 0px;
+}
+
+.blue{
+	height: 15px;
+	width: 15px;
+	background-color: #fff !important;
+	border: 3px solid #0087ff;
+	/*box-shadow: 0px 0px 20px 0px blue;*/
+	border-radius: 50%;
+	display: inline-block;
+}
+.red{
+	height: 15px;
+	width: 15px;
+	background-color: #fff !important;
+	border: 3px solid #FF0000;
+	/*box-shadow: 0px 0px 20px 0px red;*/
+	border-radius: 50%;
+	display: inline-block;
+}
+.yellow{
+	height: 15px;
+	width: 15px;
+	background-color: #fff !important;
+	border: 3px solid #ffc202;
+	/*box-shadow: 0px 0px 20px 0px yellow;*/
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.primary{
+	padding: 10px;
+	/*border-radius: 8px;*/
+	border-left: 3px solid #0087ff;
+	/*box-shadow: 0 0 0 3px #aa66cc80;*/
+	border-bottom-left-radius: 2px;
+	border-top-left-radius: 2px;
+}
+.danger{
+	padding: 10px;
+	/*border-radius: 8px;*/
+	/*border: 3px solid #007bff;*/
+	/*box-shadow: 0 0 0 3px #007bff80;*/
+	border-left: 3px solid #FF0000;
+	/*background-color: #b66d38;*/
+	border-bottom-left-radius: 2px;
+	border-top-left-radius: 2px;
+	
+}
+.warning{
+	padding: 10px;
+	/*border-radius: 8px;*/
+	border-left: 3px solid #ffc202;
+	/*box-shadow: 0 0 0 3px #f16e8880;*/
+	border-bottom-left-radius: 2px;
+	border-top-left-radius: 2px;
+}
+.success{
+	padding: 10px;
+	/*border-radius: 8px;*/
+	border-left: 3px solid #28a745;
+	/*box-shadow: 0 0 0 3px #28a74580;*/
+	border-bottom-left-radius: 2px;
+	border-top-left-radius: 2px;
+}
+.gradient-1 {
+    height: 250px;
+    width: 100%;
+    background-color: #1fc8db;
+    background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    color: white;
+    opacity: 0.95;
+}
+
+.font-monospace{
+	font-family: monospace !important;
+}
